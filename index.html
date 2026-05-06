@@ -22,15 +22,21 @@
         <div class="logo">
      <a href="#"><img src="img/logo.png" alt="Logo Eccolimpia"><i class="fas fa-leaf"></i></a>
      </div>
+     <div class="lang-selector">
+     <button onclick="cambiarIdioma('es')" title="Español">🇪🇸 ES</button>
+     <button onclick="cambiarIdioma('en')" title="English">🇬🇧 EN</button>
+     <button onclick="cambiarIdioma('it')" title="Italiano">🇮🇹 IT</button>
+</div>
  <nav>
     <button class="menu-toggle" aria-label="Abrir menú">
         <i class="fas fa-bars"></i>
     </button>
     <ul class="nav-links">
-        <li><a href="#hero">Inicio</a></li>
-        <li><a href="#metodologia">Metodología</a></li>
-        <li><a href="#nosotros">Sobre nosotros</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#hero"data-es="Inicio" data-en="Home" data-it="Inizio">Inicio></a></li>
+        <li><a href="#metodologia" data-es="Metodología" data-en="Methodology" data-it="Metodologia">Metodología>
+        </a></li>
+        <li><a href="#nosotros" data-es="Sobre nosotros" data-en="About us" data-it="Chi siamo">Sobre nosotros></a></li>
+        <li><a href="#contacto" data-es="Contacto" data-en="Contact" data-it="Contatti">Contacto</a></li>
     </ul>
  </nav>
 </header>
@@ -39,9 +45,9 @@
      <section id="hero">
     <div class="hero-overlay">
         <div class="hero-content">
-            <h1>Ottimizzazione delle risorse naturali</h1>
-            <p class="hero-subtitle">Metodologia e passione italiana per un futuro efficiente e sostenibile</p>
-            <a href="#metodologia" class="btn-hero">Scopri la nostra metodologia</a>
+            <h1 data-es="Optimización de Recursos Naturales" data-en="Natural resources optimization" data-it="Ottimizzazione delle risorse naturali">Ottimizzaziones delle risorse naturali</h1>
+            <p class="hero-subtitle" data-es="Metodología y pasión italiana para un futuro eficiente y sostenible" data-en="Methodology and Italian passion for an efficient and sustainable future" data-it="Metodologia e passione italiana per un futuro efficiente e sostenibile">Metodologia e passione italiana per un futuro efficiente e sostenibile</p>
+            <a href="#metodologia"  class="btn-hero" data-es="Descubre nuestra metodología" data-en="Discover our methodology" data-it="Scopri la nostra metodologia">Scopri la nostra metodologia</a>
             </div>
         </div>
     </section>
@@ -49,31 +55,32 @@
         <section id="metodologia">
             <section id="metodologia">
     <div class="container">
-        <h2 class="section-title">La nostra metodologia</h2>
+        <h2 class="section-title" data-es="Nuestra metodología" data-en="Our methodology" data-it="La nostra metodologia">La nostra metodologia</h2>
         <div class="cards-wrapper">
             <!-- Tarjeta 1 -->
             <div class="card">
                 <div class="card-icon">
                     <i class="fas fa-search"></i>
                 </div>
-                <h3>Diagnosi</h3>
-                <p>Analizziamo i processi attuali per identificare sprechi e potenzialità di risparmio delle risorse naturali.</p>
+                <h3 data-es="Diagnostico" data-en="Diagnostic" data-it="Diagnosi">Diagnosi</h3>
+                <p data-es="Analizamos los procesos actuales para identificar desperdicios y potencial de ahorro de recursos naturales." data-en="We analyze current processes to identify waste and natural resource saving potential." data-it="Analizziamo i processi attuali per identificare sprechi e potenzialità di risparmio delle risorse naturali.">Analizziamo i processi attuali per identificare sprechi e potenzialità di risparmio delle risorse naturali.</p>
             </div>
             <!-- Tarjeta 2 -->
             <div class="card">
                 <div class="card-icon">
                     <i class="fas fa-pencil-ruler"></i>
                 </div>
-                <h3>Progettazione</h3>
-                <p>Progettiamo soluzioni su misura combinando innovazione tecnica e rispetto per l’ambiente.</p>
+                <h3 data-es="Diseño de soluciones" data-en="Solution design" data-it="Progettazione">Progettazione</h3>
+                <p data-es="Diseñamos soluciones a medida combinando innovación técnica y respeto por el medio ambiente." data-en="We design tailor-made solutions combining technical innovation and respect for the environment." data-it="Progettiamo soluzioni su misura combinando innovazione tecnica e rispetto per l’ambiente.">Progettiamo soluzioni su misura combinando innovazione tecnica e rispetto per l’ambiente.</p>
             </div>
             <!-- Tarjeta 3 -->
             <div class="card">
                 <div class="card-icon">
                     <i class="fas fa-chart-line"></i>
                 </div>
-                <h3>Implementazione</h3>
-                <p>Affianchiamo i clienti nell’esecuzione e nel monitoraggio continuo per garantire risultati duraturi.</p>
+                <h3 data-es="Implementación y seguimiento" data-en="Implementation and monitoring" data-it="Implementazione">Implementazione</h3>
+                <p data-es="Acompañamos a los clientes en la ejecución y monitoreo continuo para garantizar resultados duraderos." data-en="We support clients in execution and continuous monitoring to ensure lasting results." data-it="Affianchiamo i clienti nell’esecuzione e nel monitoraggio continuo per garantire risultati duraturi."
+                 >Affianchiamo i clienti nell’esecuzione e nel monitoraggio continuo per garantire risultati duraturi.</p>
             </div>
         </div>
     </div>
@@ -85,9 +92,9 @@
     <div class="container">
         <div class="nosotros-flex">
             <div class="nosotros-texto">
-                <h2 class="section-title">Chi siamo</h2>
-                <p>Con sede in Italia, Eccolimpia unisce la tradizione mediterranea di rispetto per la natura con strumenti moderni di analisi e ottimizzazione. Aiutiamo aziende e comunità a ridurre gli sprechi e valorizzare ogni risorsa.</p>
-                <p>Il nostro team multidisciplinare lavora con passione per creare soluzioni su misura, accompagnando i clienti in ogni fase del percorso verso l’efficienza sostenibile.</p>
+                <h2 class="section-title" data-es="Quiénes somos" data-en="About us" data-it="Chi siamo">Chi siamo</h2>
+                <p data-es="Con sede en Italia, Eccolimpia une la tradición mediterránea de respeto por la naturaleza con herramientas modernas de análisis y optimización. Ayudamos a empresas y comunidades a reducir el desperdicio y valorizar cada recurso." data-en="Based in Italy, Eccolimpia combines the Mediterranean tradition of respect for nature with modern analysis and optimization tools. We help companies and communities reduce waste and value every resource." data-it="Con sede in Italia, Eccolimpia unisce la tradizione mediterranea di rispetto per la natura con strumenti moderni di analisi e ottimizzazione. Aiutiamo aziende e comunità a ridurre gli sprechi e valorizzare ogni risorsa.">Con sede in Italia, Eccolimpia unisce la tradizione mediterranea di rispetto per la natura con strumenti moderni di analisi e ottimizzazione. Aiutiamo aziende e comunità a ridurre gli sprechi e valorizzare ogni risorsa.</p>
+                <p data-es="Nuestro equipo multidisciplinario trabaja con pasión para crear soluciones a medida, acompañando a los clientes en cada fase del camino hacia la eficiencia sostenible." data-en="Our multidisciplinary team works with passion to create tailor-made solutions, supporting clients at every stage of the journey towards sustainable efficiency." data-it="Il nostro team multidisciplinare lavora con passione per creare soluzioni su misura, accompagnando i clienti in ogni fase del percorso verso l’efficienza sostenibile.">Il nostro team multidisciplinare lavora con passione per creare soluzioni su misura, accompagnando i clienti in ogni fase del percorso verso l’efficienza sostenibile.</p>
             </div>
             <div class="nosotros-imagen">
                 <img src="img/equipo.jpg" alt="Team Eccolimpia">
@@ -100,28 +107,28 @@
         <section id="contacto">
             <<section id="contacto">
     <div class="container">
-        <h2 class="section-title">Contattaci</h2>
-        <div class="contacto-flex">
+        <h2 class="section-title" data-es="Contáctanos" data-en="Contact us" data-it="Contattaci">Contattaci</h2>
+        <div class="contacto-flex"  >
             <!-- Formulario -->
             <form class="contacto-form" action="#" method="POST">
                 <div class="form-group">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required>
+                    <label for="nome" data-es="Nombre" data-en="Name" data-it="Nome">Nome</label>
+                    <input type="text" id="nome" name="nome"  data-es="Tu nombre" data-en="Your name" data-it="Il tuo nome" placeholder="Il tuo nome" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="La tua email" required>
+                    <label for="email" data-es="Email" data-en="Email" data-it="Email">Email</label>
+                    <input type="email" id="email" name="email"  data-es="Tu email" data-en="Your email" data-it="La tua email" placeholder="La tua email" required>
                 </div>
                 <div class="form-group">
-                    <label for="messaggio">Messaggio</label>
-                    <textarea id="messaggio" name="messaggio" rows="5" placeholder="Scrivici il tuo messaggio..." required></textarea>
+                    <label for="messaggio" data-es="Mensaje" data-en="Message" data-it="Messaggio">Messaggio</label>
+                    <textarea id="messaggio" name="messaggio" rows="5" data-es="Escríbenos tu mensaje..." data-en="Write us your message..." data-it="Scrivici il tuo messaggio..." placeholder="Scrivici il tuo messaggio..." required></textarea>
                 </div>
-                <button type="submit" class="btn-hero">Invia messaggio</button>
+                <button type="submit" class="btn-hero" data-es="Enviar mensaje" data-en="Send message" data-it="Invia messaggio">Invia messaggio</button>
             </form>
             <!-- Datos de contacto -->
             <div class="contacto-info">
                 <h3>Eccolimpia</h3>
-                <p><i class="fas fa-map-marker-alt"></i> Via della Natura 42, 50100 Firenze (FI), Italia</p>
+                <p><i class="fas fa-map-marker-alt"></i> <span data-es="Via della Natura 42, 50100 Florencia (FI), Italia" data-en="Via della Natura 42, 50100 Florence (FI), Italy" data-it="Via della Natura 42, 50100 Firenze (FI), Italia"></span>Via della Natura 42, 50100 Firenze (FI), Italia</p>
                 <p><i class="fas fa-envelope"></i> info@eccolimpia.org</p>
                 <p><i class="fas fa-phone"></i> +39 055 123 4567</p>
             </div>
@@ -135,16 +142,16 @@
     <div class="footer-container">
         <div class="footer-logo">
             <a href="#">Eccolimpia</a>
-            <p>Metodologia per un pianeta equilibrato</p>
+            <p data-es="Metodología para un planeta equilibrado" data-en="Methodology for a balanced planet" data-it="Metodologia per un pianeta equilibrato">Metodologia per un pianeta equilibrato</p>
         </div>
         <div class="footer-enlaces">
-            <a href="#hero">Home</a>
-            <a href="#metodologia">Metodologia</a>
-            <a href="#nosotros">Chi siamo</a>
-            <a href="#contacto">Contatti</a>
+            <a href="#hero" data-es="Home" data-en="Home" data-it="Home">Home</a>
+            <a href="#metodologia" data-es="Metodología" data-en="Methodology" data-it="Metodologia">Metodologia</a>
+            <a href="#nosotros" data-es="Quienes somos" data-en="Who we are" data-it="Chi siamo">Chi siamo</a>
+            <a href="#contacto" data-es="Contacto" data-en="Contact" data-it="Contatti">Contatti</a>
         </div>
         <div class="footer-copy">
-            <p>&copy; 2025 Eccolimpia.org – Tutti i diritti riservati</p>
+            <pdata-es="&copy; 2025 Eccolimpia.org – Todos los derechos reservados" data-en="&copy; 2025 Eccolimpia.org – All rights reserved" data-it="&copy; 2025 Eccolimpia.org – Tutti i diritti riservati">&copy; 2025 Eccolimpia.org – Tutti i diritti riservati</p>
         </div>
         </div>
     </footer>
